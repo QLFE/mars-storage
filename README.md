@@ -5,12 +5,12 @@ storage 封装，支持 localStorage 和 sessionStorage, 支持命名空间，�
 ## 安装
 
 ```bash
-$ npm install storage --save
+$ npm install mars-storage --save
 ```
 
 ## 使用方法
 ```
-import Storage from 'storage';
+import Storage from 'mars-storage';
 
 const storage = new Storage({
   type: 'sessionStorage',
