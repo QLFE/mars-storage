@@ -2,7 +2,7 @@
  * @Author: Wang Xiao
  * @Date: 2017-05-23 10:49:36
  * @Last Modified by: Wang Xiao
- * @Last Modified time: 2017-10-11 17:52:12
+ * @Last Modified time: 2018-02-08 19:47:04
  */
 const _storage = {}; // 本地变量后备
 
@@ -75,7 +75,7 @@ class storage {
       }
       this.remove(key);
     }
-    return null;
+    return undefined;
   }
 
   /**

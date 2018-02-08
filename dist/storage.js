@@ -95,7 +95,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @Author: Wang Xiao
  * @Date: 2017-05-23 10:49:36
  * @Last Modified by: Wang Xiao
- * @Last Modified time: 2017-05-23 11:20:45
+ * @Last Modified time: 2018-02-08 19:47:04
  */
 var _storage = {}; // 本地变量后备
 
@@ -180,7 +180,7 @@ var storage = function () {
         }
         this.remove(key);
       }
-      return null;
+      return undefined;
     }
 
     /**
@@ -259,10 +259,6 @@ var storage = function () {
   }, {
     key: 'remove',
     value: function remove(key) {
-      if (typeof key === 'undefined') {
-        throw new Error('key must be defined');
-      }
-
       key = this._fillPrefix(key);
       if (this.enabled) {
         this.storage.removeItem(key);
